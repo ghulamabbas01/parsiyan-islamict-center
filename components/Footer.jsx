@@ -9,7 +9,7 @@ const Footer = () => {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 p-10 ">
           <div className="md:w-[240px]">
             <Link href="/" className="font-bold md:text-3xl hidden md:block ">
-              Parsiyan Islamict Center
+              Parsiyan Islamic Center
             </Link>
           </div>
           <div className="text-gray-400">
@@ -42,7 +42,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center">
                   <span class="material-symbols-outlined mr-2">mail</span>
-                  Email Address:
+                  Email :
                   <Link
                     href="mailto:parsiyan02@gmail.com "
                     className="ml-3"

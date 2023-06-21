@@ -6,7 +6,14 @@ const Hero = () => {
   return (
     <div className="w-full h-auto">
       <div className="hero-img relative flex justify-center items-center">
-        <img src="/hero-img.jpg" alt="hero-img" className="hero-image" />
+        <div className="relative hero-image">
+          <Image
+            src="/hero-img.jpg"
+            alt="hero-img"
+            className="hero-image"
+            layout="fill"
+          />
+        </div>
         <div className="hero-text absolute text-center ">
           <h3 className="text-lg font-oswald text-green-400">
             Bismillah Hir Rahman Nir Rahim

@@ -4,12 +4,12 @@ import Container from "./Container";
 const PrayerTimes = () => {
   return (
     <Container>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-14 px-5 p-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:p-0 md:pt-[100px] ">
         <div className="flex flex-col justify-center ">
           <div>
             <div class="section-title">
               <span className="font-semibold text-xl text-green-600">
-                Parsiyan Islamict Center
+                Parsiyan Islamic Center
               </span>
               <h2 className="text-5xl font-bold ">Prayer Time </h2>
             </div>

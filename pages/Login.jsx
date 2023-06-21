@@ -3,7 +3,7 @@ import React from "react";
 
 const Login = () => {
   return (
-    <section class="bg-gray-50 dark:bg-gray-900 pt-10 pb-10">
+    <section class="bg-gray-50 dark:bg-gray-900 pt-10 pb-20">
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <h1 className="text-[64px] font-bold "> WellCome To Login</h1>
         <Link
@@ -11,7 +11,7 @@ const Login = () => {
           class="flex flex-col items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white text-center"
         >
           <div className="text-gray-500 mt-10 tracking-wide">
-            Parsiyan Islamict Center
+            Parsiyan Islamic Center
           </div>
         </Link>
         <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -81,12 +81,12 @@ const Login = () => {
               </button>
               <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                 Don’t have an account yet?{" "}
-                <a
+                <Link
                   href="/SignUp"
                   class="font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
                   Sign up
-                </a>
+                </Link>
               </p>
             </form>
           </div>
