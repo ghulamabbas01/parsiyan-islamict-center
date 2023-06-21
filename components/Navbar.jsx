@@ -8,11 +8,11 @@ const Navbar = () => {
   const [flyerTwo, setFlyerTwo] = React.useState(false);
   return (
     <div>
-      <Container>
+      <>
         {/* This example requires Tailwind CSS v2.0+ */}
-        <div className="relative bg-white">
+        <div className=" w-full bg-white fixed z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="flex justify-between items-center  border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+            <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
                   <h1 className="text-black font-bold text-xl">
@@ -85,7 +85,7 @@ const Navbar = () => {
                   Log in
                 </Link>
                 <Link
-                  href="#"
+                  href="/SignUp"
                   className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#57B674] "
                 >
                   Sign up
@@ -97,7 +97,7 @@ const Navbar = () => {
           <div
             className={
               open
-                ? "opacity-100 scale-100 transition ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+                ? "opacity-100 scale-100  ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
                 : "opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
             }
           >
@@ -297,9 +297,11 @@ const Navbar = () => {
                           d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
                         />
                       </svg>
-                      <span className="ml-3 text-base font-medium text-gray-900">
-                        Sign Up
-                      </span>
+                      <Link href="/SignUp">
+                        <span className="ml-3 text-base font-medium text-gray-900">
+                          Sign Up
+                        </span>
+                      </Link>
                     </Link>
                   </nav>
                 </div>
@@ -307,7 +309,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </>
     </div>
   );
 };

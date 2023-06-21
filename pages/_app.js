@@ -23,6 +23,10 @@ export default function App({ Component, pageProps }) {
           rel="stylesheet"
         />
         {/* google font start  */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
       </Head>
       <Navbar />
       <Component {...pageProps} />
