@@ -8,7 +8,7 @@ const LandingAbout = () => {
     <div className="md:pt-[100px] pb-10  ">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center">
-          <div className="relative w-full md:h-[450px] h-[350px]">
+          <div className="relative w-full md:h-[500px] h-[350px]">
             <Image
               src="/about.png"
               alt="ch"

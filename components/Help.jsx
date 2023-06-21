@@ -7,7 +7,7 @@ const Help = () => {
     <div className=" md:pt-[100px] pb-20 ">
       <div className="relative w-full h-[400px] flex justify-center items-center flex-col">
         <Image
-          src="/help.jpg "
+          src="/help-img.jpg"
           alt="help"
           layout="fill"
           className="text-green-600"

@@ -115,7 +115,7 @@ const SignUp = () => {
                     Sign up
                   </button>
                   <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                    have a Already Account{" "}
+                    have a Already Account
                     <Link
                       href="/Login"
                       class="font-medium text-primary-600 hover:underline dark:text-primary-500"

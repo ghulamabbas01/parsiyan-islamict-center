@@ -3,7 +3,7 @@ import React from "react";
 
 const Login = () => {
   return (
-    <section class="bg-gray-50 dark:bg-gray-900 pt-10 pb-20">
+    <section class="bg-gray-50 dark:bg-gray-900 md:pt-[170px] pb-20">
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <h1 className="text-[64px] font-bold "> WellCome To Login</h1>
         <Link

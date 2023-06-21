@@ -25,7 +25,7 @@ const About = () => {
             bonding. Through these initiatives, they aim to preserve and pass on
             their rich cultural heritage to future generations.
           </div>
-          <div className="my-5 bg-green-100 p-5 rounded-md border border-green-600 h-[353px]">
+          <div className="my-5 bg-green-100 p-5 rounded-md border border-green-600 ">
             انجمن فرهنگی پارسیان یک سازمان غیرانتفاعی است که هدف آن ترویج و حفظ
             میراث فرهنگی جامعه پارسیان است. این سازمان رویدادها و فعالیت های
             مختلفی را در طول سال سازماندهی می کند، از جمله جشنواره های فرهنگی،
