@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./Container";
+import Link from "next/link";
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
@@ -13,11 +14,11 @@ const Navbar = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex justify-between items-center  border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
-                <a href="/">
+                <Link href="/">
                   <h1 className="text-black font-bold text-xl">
                     Parsiyan Islamict Center
                   </h1>
-                </a>
+                </Link>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
                 <button
@@ -45,50 +46,50 @@ const Navbar = () => {
                 </button>
               </div>
               <nav className="hidden md:flex space-x-10">
-                <a
+                <Link
                   href="#"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   About
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   Donate
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   Services
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   Contact Us
-                </a>
+                </Link>
               </nav>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a
+                <Link
                   href="/Login"
                   className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   Log in
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#57B674] "
                 >
                   Sign up
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -132,7 +133,7 @@ const Navbar = () => {
                 </div>
                 <div className="mt-6">
                   <nav className="grid gap-y-8">
-                    <a
+                    <Link
                       href="#"
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
@@ -155,8 +156,8 @@ const Navbar = () => {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Analytics
                       </span>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="#"
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
@@ -179,8 +180,8 @@ const Navbar = () => {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Engagement
                       </span>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="#"
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
@@ -203,8 +204,8 @@ const Navbar = () => {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Security
                       </span>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="#"
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
@@ -227,8 +228,8 @@ const Navbar = () => {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Integrations
                       </span>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="#"
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
@@ -251,8 +252,8 @@ const Navbar = () => {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Automations
                       </span>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="#"
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
@@ -275,8 +276,8 @@ const Navbar = () => {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Login
                       </span>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="/login"
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
@@ -299,7 +300,7 @@ const Navbar = () => {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Sign Up
                       </span>
-                    </a>
+                    </Link>
                   </nav>
                 </div>
               </div>
