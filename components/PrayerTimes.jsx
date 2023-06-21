@@ -32,7 +32,7 @@ const PrayerTimes = () => {
                 Dawn Prayer
               </div>
               <h3 className="mt-5 mb-5 font-bold text-2xl">Fajar</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white">
+              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm ">
                 5:00 AM
               </div>
             </div>
@@ -41,7 +41,7 @@ const PrayerTimes = () => {
                 Sunrise Time
               </div>
               <h3 className="mt-5 mb-5 font-bold text-2xl">ZOHAR</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white">
+              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
                 1:30 AM
               </div>
             </div>
@@ -50,7 +50,7 @@ const PrayerTimes = () => {
                 Afternoon
               </div>
               <h3 className="mt-5 mb-5 font-bold text-2xl">ASAR</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white">
+              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
                 5:30 AM
               </div>
             </div>
@@ -59,7 +59,7 @@ const PrayerTimes = () => {
                 Sunset Prayer
               </div>
               <h3 className="mt-5 mb-5 font-bold text-2xl">MAGRIB</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white">
+              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
                 7:21 AM
               </div>
             </div>
@@ -68,7 +68,7 @@ const PrayerTimes = () => {
                 Evening Prayer
               </div>
               <h3 className="mt-5 mb-5 font-bold text-2xl">ISHA</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white">
+              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
                 9:00 AM
               </div>
             </div>
@@ -77,7 +77,7 @@ const PrayerTimes = () => {
                 Sunrise Time
               </div>
               <h3 className="mt-5 mb-5 font-bold text-2xl">JUMMA MUBARAKE</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white">
+              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
                 1:30 AM
               </div>
             </div>
