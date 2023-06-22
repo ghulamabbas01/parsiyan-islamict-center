@@ -8,10 +8,10 @@ const PrayerTimes = () => {
         <div className="flex flex-col justify-center ">
           <div>
             <div class="section-title">
-              <span className="font-semibold text-xl text-green-600">
+              <span className="font-semibold text-md text-green-600">
                 Parsiyan Islamic Center
               </span>
-              <h2 className="text-5xl font-bold ">Prayer Time </h2>
+              <h2 className="text-6xl font-bold ">Prayer Time </h2>
             </div>
             <div class="arabic-time mt-3">
               <span className="text-green-600 underline text-lg ">

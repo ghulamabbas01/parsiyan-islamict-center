@@ -2,6 +2,13 @@ import React from "react";
 import Container from "./Container";
 import Link from "next/link";
 
+import { FaFacebook } from "react-icons/fa";
+import {
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/Ai";
+
 const Footer = () => {
   return (
     <div className="bg-black text-white">
@@ -11,6 +18,21 @@ const Footer = () => {
             <Link href="/" className="font-bold md:text-3xl hidden md:block ">
               Parsiyan Islamic Center
             </Link>
+
+            <div className="social-icon flex gap-3 my-4 items-center">
+              <Link href="/">
+                <FaFacebook className="text-[28px] hover:text-blue-600 transition-all" />
+              </Link>
+              <Link href="/">
+                <AiFillInstagram className="text-3xl hover:text-pink-500 " />
+              </Link>
+              <Link href="/">
+                <AiFillLinkedin className="text-3xl hover:text-blue-400 transition-all" />
+              </Link>
+              <Link href="/">
+                <AiFillTwitterCircle className="text-3xl hover:text-blue-600 transition-all" />
+              </Link>
+            </div>
           </div>
           <div className="text-gray-400">
             <h1 className="font-bold text-2xl text-white">Company Links</h1>

@@ -11,7 +11,7 @@ const About = () => {
       </div>
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
-          <div className="my-5 bg-green-100 p-5 rounded-md border border-green-600">
+          <div className="my-5 bg-green-100 p-5 rounded-md border border-green-600 h-[350px]">
             Parsiyan Cultural Association is a non-profit organization that aims
             to promote and preserve the cultural heritage of the Parsi
             community. It organizes various events and activities throughout the
@@ -25,7 +25,7 @@ const About = () => {
             bonding. Through these initiatives, they aim to preserve and pass on
             their rich cultural heritage to future generations.
           </div>
-          <div className="my-5 bg-green-100 p-5 rounded-md border border-green-600 ">
+          <div className="my-5 bg-green-100 p-5 rounded-md border border-green-600 h-[350px] ">
             انجمن فرهنگی پارسیان یک سازمان غیرانتفاعی است که هدف آن ترویج و حفظ
             میراث فرهنگی جامعه پارسیان است. این سازمان رویدادها و فعالیت های
             مختلفی را در طول سال سازماندهی می کند، از جمله جشنواره های فرهنگی،
