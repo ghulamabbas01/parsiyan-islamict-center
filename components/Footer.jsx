@@ -15,7 +15,7 @@ const Footer = () => {
       <Container>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 p-10 ">
           <div className="md:w-[240px]">
-            <Link href="/" className="font-bold md:text-3xl hidden md:block ">
+            <Link href="/" className="font-bold text-3xl ">
               Parsiyan Islamic Center
             </Link>
 

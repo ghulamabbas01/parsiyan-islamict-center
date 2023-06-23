@@ -12,7 +12,7 @@ const Donate = () => {
           Thank You For Your Desire To Give!
         </div>
 
-        <div className="my-5">
+        <div className="my-5 bg-green-100 border border-green-600 p-5 rounded-md">
           I am writing to you today on behalf of Parsiyan Islamic Center, a
           non-profit organization that provides support and assistance to
           individuals and families in our community who are in need of burial
