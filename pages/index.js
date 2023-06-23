@@ -14,8 +14,8 @@ export default function Home() {
         <main>
           <Hero />
           <PrayerTimes />
-          <Services />
-          <LandingAbout />
+          {/* <Services /> */}
+          {/* <LandingAbout /> */}
           <Help />
         </main>
       </div>

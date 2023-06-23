@@ -34,11 +34,11 @@ const ContactUs = () => {
         setLoading(true);
 
         var data = JSON.stringify({
-          service_id: "service_1eepph5",
-          template_id: "template_akckxrp",
-          user_id: "94RLbs1Hos_WVkb4Z",
+          service_id: "service_1ce3oq4",
+          template_id: "template_6zcr1tn",
+          user_id: "L7LjjRX4cJF8Hyx4I",
           template_params: {
-            to_email: "ak6119231@gmail.com",
+            to_email: "parsiyan03@gmail.com",
             subject: "Verify your email",
             from_name: "",
             message: "",
@@ -76,7 +76,7 @@ const ContactUs = () => {
   console.log(accountSid, authToken);
 
   return (
-    <div className="pt-[120px] pb-10">
+    <div className="pt-[120px] pb-10 ">
       <div className="bg-green-600 w-full p-10 border ">
         <h1 className=" text-center text-white  font-bold text-5xl">
           Contact Us
@@ -88,15 +88,26 @@ const ContactUs = () => {
       </div>
 
       <Container>
-        <div className="md:px-48">
+        <div className="relative w-full h-96 mt-10 mb-5">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
+            frameborder="0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+        <div className="">
           {/* from section  */}
-          <Stack className="form-section">
-            <Box className="form-feed">
+          <Stack className="form-section bg-green-100 border border-green-600 rounded-lg">
+            <Box className="form-feed md:px-48">
               {/* grid form feed 1  */}
               <FormikProvider value={formik}>
                 <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
                   <Grid container spacing={2} mt={{ md: 2, xs: 0 }}>
                     <Grid item xs={12} md={6}>
+                      <h5 className="mb-2 font-semibold">First Name</h5>
                       <TextField
                         label={"First name"}
                         className="text-feed"
@@ -107,6 +118,7 @@ const ContactUs = () => {
                       />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <h5 className="mb-2 font-semibold">Last Name</h5>
                       <TextField
                         label={"Last name"}
                         className="text-feed"
@@ -121,6 +133,7 @@ const ContactUs = () => {
                   {/* grid form feed 2  */}
                   <Grid container spacing={2} mt={{ md: 2, xs: 0 }}>
                     <Grid item xs={12} md={6}>
+                      <h5 className="mb-2 font-semibold">Email </h5>
                       <TextField
                         label={"Your email"}
                         className="text-feed"
@@ -131,6 +144,7 @@ const ContactUs = () => {
                       />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <h5 className="mb-2 font-semibold">Phone No</h5>
                       <TextField
                         label={"Your phone"}
                         className="text-feed"
@@ -144,10 +158,11 @@ const ContactUs = () => {
                   {/* grid form feed 2  */}
                   <Stack
                     spacing={2}
-                    direction="row"
+                    // direction="row"
                     mt={{ md: 4, xs: 2 }}
                     mb={4}
                   >
+                    <h5 className="mb-2 font-semibold">Message</h5>
                     <TextField
                       label={"Your message"}
                       multiline
@@ -162,7 +177,7 @@ const ContactUs = () => {
                     type="submit"
                     variant="contained"
                     size="large"
-                    className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-800"
+                    className="py-3 px-5 mb-5 text-sm font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-800"
                     loading={loading}
                   >
                     send message

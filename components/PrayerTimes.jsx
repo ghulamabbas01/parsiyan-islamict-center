@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./Container";
-
+import Image from "next/image";
 const PrayerTimes = () => {
   return (
     <Container>
@@ -28,57 +28,99 @@ const PrayerTimes = () => {
         <div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-3 items-center justify-center ">
             <div class="border overflow-hidden text-center rounded-md shadow-sm">
-              <div className="bg-green-600 p-3 text-white font-bold ">
+              <div className="bg-green-600 p-2 text-white font-bold ">
                 Dawn Prayer
               </div>
-              <h3 className="mt-5 mb-5 font-bold text-2xl">Fajar</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm ">
-                5:00 AM
+              <div className="relative w-full">
+                <Image src="/fager.jpg" alt="hero-img" layout="fill" />
+                <div className="relative py-6">
+                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                    FAJAR
+                  </h3>
+                  <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
+                    5:00 AM
+                  </div>
+                </div>
               </div>
             </div>
             <div class="border overflow-hidden text-center rounded-md shadow-sm">
-              <div className="bg-green-600 p-3 text-white font-bold ">
-                Sunrise Time
-              </div>
-              <h3 className="mt-5 mb-5 font-bold text-2xl">ZOHAR</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
-                1:30 AM
-              </div>
-            </div>
-            <div class="border overflow-hidden text-center rounded-md shadow-sm">
-              <div className="bg-green-600 p-3 text-white font-bold ">
-                Afternoon
-              </div>
-              <h3 className="mt-5 mb-5 font-bold text-2xl">ASAR</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
-                5:30 AM
-              </div>
-            </div>
-            <div class="border overflow-hidden text-center rounded-md shadow-sm">
-              <div className="bg-green-600 p-3 text-white font-bold ">
-                Sunset Prayer
-              </div>
-              <h3 className="mt-5 mb-5 font-bold text-2xl">MAGRIB</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
-                7:21 AM
-              </div>
-            </div>
-            <div class="border overflow-hidden text-center rounded-md shadow-sm">
-              <div className="bg-green-600 p-3 text-white font-bold ">
+              <div className="bg-green-600 p-2 text-white font-bold ">
                 Evening Prayer
               </div>
-              <h3 className="mt-5 mb-5 font-bold text-2xl">ISHA</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
-                9:00 AM
+              <div className="relative w-full">
+                <Image src="/afternoon.jpg" alt="afternoon" layout="fill" />
+                <div className="relative py-6">
+                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                    ZOHAR
+                  </h3>
+                  <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
+                    1:30 AM
+                  </div>
+                </div>
               </div>
             </div>
             <div class="border overflow-hidden text-center rounded-md shadow-sm">
-              <div className="bg-green-600 p-3 text-white font-bold ">
+              <div className="bg-green-600 p-2 text-white font-bold ">
+                Afternoon
+              </div>
+              <div className="relative w-full">
+                <Image src="/asher.jpg" alt="asher" layout="fill" />
+                <div className="relative py-6">
+                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                    ASHAR
+                  </h3>
+                  <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
+                    5:30 AM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border overflow-hidden text-center rounded-md shadow-sm">
+              <div className="bg-green-600 p-2 text-white font-bold ">
+                Sunset Prayer
+              </div>
+              <div className="relative w-full">
+                <Image src="/magrab.jpg" alt="magrab" layout="fill" />
+                <div className="relative py-6">
+                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                    MAGRIB
+                  </h3>
+                  <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
+                    7:20 AM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border overflow-hidden text-center rounded-md shadow-sm">
+              <div className="bg-green-600 p-2 text-white font-bold ">
+                Evening Prayer
+              </div>
+              <div className="relative w-full">
+                <Image src="/night.jpg" alt="night" layout="fill" />
+                <div className="relative py-6">
+                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                    ISHA
+                  </h3>
+                  <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
+                    9:20 AM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border overflow-hidden text-center rounded-md shadow-sm">
+              <div className="bg-green-600 p-2 text-white font-bold ">
                 Sunrise Time
               </div>
-              <h3 className="mt-5 mb-5 font-bold text-2xl">JUMMA MUBARAKE</h3>
-              <div className="bg-green-600 p-2 mb-6 w-[80px] mx-auto font-semibold text-white rounded-sm">
-                1:30 AM
+              <div className="relative w-full">
+                <Image src="/juma.jpg" alt="juma" layout="fill" />
+                <div className="relative py-6">
+                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                    JUMMA MUBARAKE
+                  </h3>
+                  <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
+                    1:30 AM
+                  </div>
+                </div>
               </div>
             </div>
           </div>

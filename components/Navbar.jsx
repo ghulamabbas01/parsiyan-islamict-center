@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
@@ -12,12 +13,20 @@ const Navbar = () => {
         {/* This example requires Tailwind CSS v2.0+ */}
         <div className=" w-full bg-white fixed z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+            <div className="flex justify-between items-center py-3 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
-                  <h1 className="text-black font-bold text-xl">
+                  {/* <h1 className="text-black font-bold text-xl">
                     Parsiyan Islamic Center
-                  </h1>
+                  </h1> */}
+                  <div className="relative logo-Img">
+                    <Image
+                      src="/logo.jpg "
+                      alt="Parsiyan-Cultural-Assocation-Logo.JPG"
+                      width={70}
+                      height={70}
+                    />
+                  </div>
                 </Link>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
@@ -78,17 +87,17 @@ const Navbar = () => {
                 </Link>
               </nav>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <Link
+                {/* <Link
                   href="/Login"
                   className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   Log in
-                </Link>
+                </Link> */}
                 <Link
                   href="/SignUp"
-                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#57B674] "
+                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600  hover:bg-green-700  "
                 >
-                  Sign up
+                  Sign up / Login
                 </Link>
               </div>
             </div>
@@ -176,7 +185,7 @@ const Navbar = () => {
                         </span>
                         <Link href="/SignUp">
                           <span className="ml-3 text-base font-medium text-gray-900">
-                            Sign Up
+                            Sign Up / Login
                           </span>
                         </Link>
                       </Link>

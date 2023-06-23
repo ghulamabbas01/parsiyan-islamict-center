@@ -5,34 +5,41 @@ import Container from "@/components/Container";
 const SignUp = () => {
   return (
     <>
+      <div className="bg-green-600 w-full pb-16 border pt-[150px]">
+        <h1 className=" text-center text-white  font-bold text-5xl">
+          SignUp / Login
+        </h1>
+      </div>
       <Container>
-        <section class="bg-gray-50 dark:bg-gray-900 pt-[120px] pb-10">
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 mb-5 ">
-            <div className="bg-green-100 px-5 text-center rounded-sm border border-green-600 ">
-              <h3 className="font-semibold my-4">Quarterly</h3>
-              <div className="p-3 bg-green-600 mb-5">$75.00</div>
-            </div>
-            <div className="bg-green-100 px-5 text-center rounded-sm border border-green-600 ">
-              <h3 className="font-semibold my-4">6 month</h3>
-              <div className="p-3 bg-green-600 mb-5">$150.00</div>
-            </div>
-            <div className="bg-green-100 px-5 text-center rounded-sm border border-green-600 ">
-              <h3 className="font-semibold my-4">Annual Membership</h3>
-              <div className="p-3 bg-green-600 mb-5">$300.00</div>
+        <h1 className="font-semibold text-3xl my-4 text-center">Membership</h1>
+        <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 mt-5 mb-5  md:w-[800px] md:mx-auto">
+          <div className="bg-green-100 px-5 text-center rounded-sm border border-green-600 hover:border-green-700 ">
+            <h3 className="font-semibold my-4">Student</h3>
+            <div className="p-3 bg-green-600 mb-5 hover:bg-green-700">
+              <Link href="#" className="text-white font-semibold">
+                $50.00
+              </Link>
             </div>
           </div>
+          <div className="bg-green-100 px-5 text-center rounded-sm border border-green-600 hover:border-green-700 ">
+            <h3 className="font-semibold my-4">Individual</h3>
+            <div className="p-3 bg-green-600 mb-5 hover:bg-green-700">
+              <Link href="#" className="text-white font-semibold">
+                $75.00
+              </Link>
+            </div>
+          </div>
+          <div className="bg-green-100 px-5 text-center rounded-sm border border-green-600 hover:border-green-700 ">
+            <h3 className="font-semibold my-4">Family</h3>
+            <div className="p-3 bg-green-600 mb-5 hover:bg-green-700">
+              <Link href="#" className="text-white font-semibold">
+                $100.00
+              </Link>
+            </div>
+          </div>
+        </div>
+        <section class="bg-gray-50 dark:bg-gray-900  mb-10">
           <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto">
-            <h1 className="md:text-[64px] font-bold  text-3xl">
-              WellCome To Sign Up
-            </h1>
-            <Link
-              href="/"
-              class="flex flex-col items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white text-center"
-            >
-              <div className="text-gray-500 mt-10 tracking-wide">
-                Parsiyan Islamict Center
-              </div>
-            </Link>
             <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
               <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
