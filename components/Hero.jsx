@@ -10,13 +10,20 @@ const Hero = () => {
         <div className="relative hero-image">
           <Image src="/hero-banner.jpg" alt="hero-img" layout="fill" />
         </div>
-        <div className="hero-text absolute text-center ">
+        <div className="hero-text absolute text-center top-[40%] ">
           <h3 className="text-lg font-oswald text-green-400">
             Bismillah Hir Rahman Nir Rahim
           </h3>
           <h1 className="md:text-5xl text-2xl mt-2 md:mt-7 font-bold text-white">
             Welcome to the Parsiyan Cultural Assocation
           </h1>
+          <p className="text-white w-[1000px] m-auto my-4">
+            Parsiyan Cultural Association is a non-profit organization that
+            strives to preserve and promote the culture and rich traditions of
+            our shared civilizational and cultural heritage. This association
+            works with a steadfast determination to become a trusted platform
+            for cultural and social exchange and participation.
+          </p>
           <div className="bg-green-600 text-white p-2.5 w-[250px] rounded-sm text-center my-3 mx-auto  hover:bg-green-700">
             <Link
               href="/SignUp"

@@ -9,7 +9,7 @@ const PrayerTimes = () => {
           <div className="text-center md:text-left">
             <div class="section-title">
               <span className="font-semibold text-md text-green-600">
-                Parsiyan Islamic Center
+                Parsiyan Cultural Association
               </span>
               <h2 className="text-6xl font-bold ">Prayer Time </h2>
             </div>

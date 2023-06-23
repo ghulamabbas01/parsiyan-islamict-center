@@ -21,11 +21,11 @@ const Help = () => {
             We Need Your Help
           </h1>
           <p className="text-white md:my-3 md:w-[800px] p-4 md:p-0">
-            I am writing to you today on behalf of Parsiyan Islamic Center, a
-            non-profit organization that provides support and assistance to
-            individuals and families in our community who are in need of burial
-            expenses and other essential services. Not to mention the
-            operational cost to run the Islamic center.
+            I am writing to you today on behalf of Parsiyan Cultural
+            Association, a non-profit organization that provides support and
+            assistance to individuals and families in our community who are in
+            need of burial expenses and other essential services. Not to mention
+            the operational cost to run the Islamic center.
           </p>
           <div className="bg-green-600 text-white  hover:bg-green-700 p-2.5 w-[150px] rounded-sm text-center my-3 mx-auto">
             <Link

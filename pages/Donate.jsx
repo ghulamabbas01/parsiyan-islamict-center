@@ -13,21 +13,22 @@ const Donate = () => {
         </div>
 
         <div className="my-5 bg-green-100 border border-green-600 p-5 rounded-md">
-          I am writing to you today on behalf of Parsiyan Islamic Center, a
-          non-profit organization that provides support and assistance to
-          individuals and families in our community who are in need of burial
-          expenses and other essential services. Not to mention the operational
-          cost to run the Islamic center. As you may know, the cost of funerals
-          and burials can be prohibitively expensive, leaving many families
-          struggling to cover the costs and putting them at risk of financial
-          hardship. Our organization is committed to providing support to these
-          families, so that they can give their loved ones a dignified farewell
-          without having to worry about the financial burden. In addition to
-          burial expenses, we also provide support for operating costs such as
-          rent, utilities, and other necessary expenses that are critical to the
-          ongoing operation of our organization. These costs can be a
-          significant challenge for our organization, but with your support, we
-          can continue to provide these important services to our community.
+          I am writing to you today on behalf of Parsiyan Cultural Association
+          and religious, a non-profit organization that provides support and
+          assistance to individuals and families in our community who are in
+          need of burial expenses and other essential services. Not to mention
+          the operational cost to run the Islamic center. As you may know, the
+          cost of funerals and burials can be prohibitively expensive, leaving
+          many families struggling to cover the costs and putting them at risk
+          of financial hardship. Our organization is committed to providing
+          support to these families, so that they can give their loved ones a
+          dignified farewell without having to worry about the financial burden.
+          In addition to burial expenses, we also provide support for operating
+          costs such as rent, utilities, and other necessary expenses that are
+          critical to the ongoing operation of our organization. These costs can
+          be a significant challenge for our organization, but with your
+          support, we can continue to provide these important services to our
+          community.
           <div className="font-bold my-5">
             Your donation will help us to cover the following expenses:
           </div>

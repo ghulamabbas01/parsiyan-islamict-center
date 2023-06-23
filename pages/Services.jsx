@@ -6,7 +6,7 @@ const Services = () => {
     <div className=" pt-[100px]  pb-10 ">
       <Container>
         <h1 className="font-bold text-5xl text-center my-10 ">
-          Service of “Parsiyan” Islamic Center
+          Service of “Parsiyan” Cultural Association
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -20,7 +20,7 @@ const Services = () => {
               />
             </div>
 
-            <h2 className="font-bold my-3 ">Special Child Care</h2>
+            <h2 className="font-bold my-3 ">Cultural Association</h2>
             <p className="text-[14px]">
               Teaching Islamic fundamentals of the Noble Qur'an and Tajweed in
               person and otherwise. Attendance (online) for adult children.

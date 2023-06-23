@@ -91,7 +91,7 @@ const ContactUs = () => {
         <div className="relative w-full h-96 mt-10 mb-5">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.3508089307516!2d-121.36684918958143!3d38.61780997166734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809adbfb41b6b3d1%3A0x34e36d3bc6a81720!2s2894%20Eastern%20Ave%2C%20Sacramento%2C%20CA%2095821!5e0!3m2!1sen!2sus!4v1687542621990!5m2!1sen!2sus"
             frameborder="0"
             allowfullscreen=""
             aria-hidden="false"
@@ -175,7 +175,6 @@ const ContactUs = () => {
                   </Stack>
                   <LoadingButton
                     type="submit"
-                    size="large"
                     className="text-white rounded-lg bg-green-600 hover:bg-green-800 py-3 px-5 text-sm font-medium text-center "
                     loading={loading}
                   >
