@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-img relative flex justify-center items-center">
         <div className="relative hero-image">
           <Image
-            src="/hero-img.jpg "
+            src="/hero-img.jpg"
             alt="hero-img"
             className="hero-image"
             layout="fill"
