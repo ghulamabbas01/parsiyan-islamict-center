@@ -177,7 +177,7 @@ const ContactUs = () => {
                     type="submit"
                     variant="contained"
                     size="large"
-                    className="py-3 px-5 mb-5 text-sm font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-800"
+                    className="py-3 px-5 mb-6 text-sm font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-800"
                     loading={loading}
                   >
                     send message

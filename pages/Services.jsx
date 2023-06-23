@@ -5,6 +5,10 @@ const Services = () => {
   return (
     <div className=" pt-[100px]  pb-10 ">
       <Container>
+        <h1 className="font-bold text-5xl text-center my-10 ">
+          Service of “Parsiyan” Islamic Center
+        </h1>
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="border border-green-500 rounded-md bg-green-100 p-5 ">
             <div className="relative w-10 h-10">

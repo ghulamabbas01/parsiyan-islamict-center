@@ -21,7 +21,7 @@ const Navbar = () => {
                   </h1> */}
                   <div className="relative logo-Img">
                     <Image
-                      src="/logo.jpg "
+                      src="/logo.jpg"
                       alt="Parsiyan-Cultural-Assocation-Logo.JPG"
                       width={70}
                       height={70}
