@@ -175,9 +175,8 @@ const ContactUs = () => {
                   </Stack>
                   <LoadingButton
                     type="submit"
-                    variant="contained"
                     size="large"
-                    className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-800"
+                    className="text-white rounded-lg bg-green-600 hover:bg-green-800 py-3 px-5 text-sm font-medium text-center "
                     loading={loading}
                   >
                     send message
