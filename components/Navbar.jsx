@@ -2,11 +2,13 @@ import React from "react";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
+// import i18n from "@/i18n";
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const [flyer, setFlyer] = React.useState(false);
   const [flyerTwo, setFlyerTwo] = React.useState(false);
+
   return (
     <div>
       <>
@@ -57,31 +59,31 @@ const Navbar = () => {
               <nav className="hidden md:flex space-x-10">
                 <Link
                   href="/"
-                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
+                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
                 >
                   Home
                 </Link>
                 <Link
                   href="/About"
-                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
+                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
                 >
                   About
                 </Link>
                 <Link
                   href="/Donate"
-                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
+                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
                 >
                   Donate
                 </Link>
                 <Link
                   href="/Services"
-                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
+                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
                 >
                   Services
                 </Link>
                 <Link
                   href="/ContactUs"
-                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
+                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
                 >
                   Contact Us
                 </Link>
@@ -99,6 +101,11 @@ const Navbar = () => {
                 >
                   Sign up / Login
                 </Link>
+                <div>
+                  <button onClick={() => changeLanguage("en")}>English</button>
+                  <button onClick={() => changeLanguage("fa")}>French</button>
+                  {/* Add more buttons for other languages */}
+                </div>
               </div>
             </div>
           </div>
