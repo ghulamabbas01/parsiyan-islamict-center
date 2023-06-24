@@ -22,7 +22,103 @@
     background-size: cover;
 }
 
-/* .logo-Img{
-    width: 200px;
-} */
+.Services-1{
+ background-image: url("/Services.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: relative;
+ overflow: hidden;
+}
+.Services-1::before{
+    content:"";
+    position: absolute;
+    background-color: black;
+    width: 238px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    opacity: 0.6;
+}
+.Services-2{
+    background-image: url("/Services-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+   }
+   .Services-2::before{
+    content:"";
+    position: absolute;
+    background-color: black;
+    width: 238px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    opacity: 0.6;
+}
+.Services-3{
+    background-image: url("/Services-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+   }
+   .Services-3::before{
+    content:"";
+    position: absolute;
+    background-color: black;
+    width: 238px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    opacity: 0.6;
+ 
+}
+.Services-4{
+    background-image: url("/Services-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+   }
+   .Services-4::before{
+    content:"";
+    position: absolute;
+    background-color: black;
+    width: 238px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    opacity: 0.6;
+ 
+}
+.Services-5{
+    background-image: url("/dunate-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+   }
+   .Services-5::before{
+    content:"";
+    position: absolute;
+    background-color: black;
+    width: 238px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    opacity: 0.6;
+ 
+}
+
+
 

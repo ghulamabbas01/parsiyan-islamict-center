@@ -57,31 +57,31 @@ const Navbar = () => {
               <nav className="hidden md:flex space-x-10">
                 <Link
                   href="/"
-                  className="text-base font-medium text-gray-500 hover:text-gray-900"
+                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
                 >
                   Home
                 </Link>
                 <Link
                   href="/About"
-                  className="text-base font-medium text-gray-500 hover:text-gray-900"
+                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
                 >
                   About
                 </Link>
                 <Link
                   href="/Donate"
-                  className="text-base font-medium text-gray-500 hover:text-gray-900"
+                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
                 >
                   Donate
                 </Link>
                 <Link
                   href="/Services"
-                  className="text-base font-medium text-gray-500 hover:text-gray-900"
+                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
                 >
                   Services
                 </Link>
                 <Link
                   href="/ContactUs"
-                  className="text-base font-medium text-gray-500 hover:text-gray-900"
+                  className="text-base font-medium text-gray-500 font-semibold hover:text-green-600"
                 >
                   Contact Us
                 </Link>

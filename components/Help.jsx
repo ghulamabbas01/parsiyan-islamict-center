@@ -4,7 +4,7 @@ import React from "react";
 
 const Help = () => {
   return (
-    <div className=" md:pt-[100px] pb-20 ">
+    <div className=" md:pt-[100px] pb-20 mt-10 md:mt-0">
       <div className="relative w-full h-[400px] flex justify-center items-center flex-col">
         <Image
           src="/help-img.jpg"
