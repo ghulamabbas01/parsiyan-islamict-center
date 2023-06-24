@@ -12,26 +12,34 @@ const SignUp = () => {
       </div>
       <Container>
         <h1 className="font-semibold text-3xl my-4 text-center">Membership</h1>
-        <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 mt-5 mb-5  md:w-[800px] md:mx-auto">
-          <div className="bg-green-100 px-5 text-center rounded-sm border border-green-600 hover:border-green-700 ">
+        <div className=" grid grid-cols-1 md:grid-cols-4 gap-5 mt-5 mb-5  ">
+          <div className="bg-gray-100 hover:bg-green-100 px-5 active:bg-green-100 text-center rounded-sm border border-gray-600 hover:border-green-700 ">
+            <h3 className="font-semibold my-4">Regisreation Fee</h3>
+            <div className="p-3 bg-gray-600 mb-5 hover:bg-green-600 cursor-pointer">
+              <Link href="#" className="text-white font-semibold">
+                $100.00
+              </Link>
+            </div>
+          </div>
+          <div className="bg-gray-100 hover:bg-green-100 px-5 active:bg-green-100 text-center rounded-sm border border-gray-600 hover:border-green-700 ">
             <h3 className="font-semibold my-4">Student</h3>
-            <div className="p-3 bg-green-600 mb-5 hover:bg-green-700">
+            <div className="p-3 bg-gray-600 mb-5 hover:bg-green-600 cursor-pointer">
               <Link href="#" className="text-white font-semibold">
                 $50.00
               </Link>
             </div>
           </div>
-          <div className="bg-green-100 px-5 text-center rounded-sm border border-green-600 hover:border-green-700 ">
+          <div className="bg-gray-100 hover:bg-green-100 px-5 active:bg-green-100 text-center rounded-sm border border-gray-600 hover:border-green-700 ">
             <h3 className="font-semibold my-4">Individual</h3>
-            <div className="p-3 bg-green-600 mb-5 hover:bg-green-700">
+            <div className="p-3 bg-gray-600 mb-5 hover:bg-green-600 cursor-pointer">
               <Link href="#" className="text-white font-semibold">
                 $75.00
               </Link>
             </div>
           </div>
-          <div className="bg-green-100 px-5 text-center rounded-sm border border-green-600 hover:border-green-700 ">
+          <div className="bg-gray-100 hover:bg-green-100 px-5 active:bg-green-100 text-center rounded-sm border border-gray-600 hover:border-green-700 ">
             <h3 className="font-semibold my-4">Family</h3>
-            <div className="p-3 bg-green-600 mb-5 hover:bg-green-700">
+            <div className="p-3 bg-gray-600 mb-5 hover:bg-green-600 cursor-pointer">
               <Link href="#" className="text-white font-semibold">
                 $100.00
               </Link>

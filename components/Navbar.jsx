@@ -101,11 +101,6 @@ const Navbar = () => {
                 >
                   Sign up / Login
                 </Link>
-                <div>
-                  <button onClick={() => changeLanguage("en")}>English</button>
-                  <button onClick={() => changeLanguage("fa")}>French</button>
-                  {/* Add more buttons for other languages */}
-                </div>
               </div>
             </div>
           </div>

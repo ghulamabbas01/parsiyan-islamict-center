@@ -55,16 +55,6 @@ const Footer = () => {
             <div className="text-gray-400 mt-3 md:mt-0">
               <h1 className="font-bold text-2xl text-white">Address</h1>
               <ul className=" flex flex-col gap-5 mt-5">
-                <li className=" flex items-center ">
-                  <span class="material-symbols-outlined mr-3">smartphone</span>
-                  Phone No:
-                  <Link
-                    href="tel:  +1(916)699-3510"
-                    className="ml-3 text-gray-400 hover:text-white "
-                  >
-                    +1 (916)699-3510{" "}
-                  </Link>
-                </li>
                 <li className=" flex items-center">
                   <span class="material-symbols-outlined mr-3">mail</span>
                   Email :
@@ -74,7 +64,7 @@ const Footer = () => {
                    "
                     target="blank"
                   >
-                    parsiyan02@gmail.com
+                    Parsiyan03@gmail.com
                   </Link>
                 </li>
                 <li className=" flex justify-center">
