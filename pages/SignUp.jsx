@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import React, { useState } from "react";
 import Container from "@/components/Container";
@@ -16,6 +17,7 @@ const SignUp = () => {
     value = e.target.value;
     setUser({ ...user, [name]: value });
   };
+  const router = useRouter();
   return (
     <>
       <div className="bg-green-600 w-full pb-16 border pt-[150px]">
@@ -25,41 +27,54 @@ const SignUp = () => {
       </div>
       <Container>
         <h1 className="font-semibold text-3xl my-4 text-center">Membership</h1>
-        <div className=" grid grid-cols-1 md:grid-cols-4 gap-5 mt-5 mb-5  ">
-          <div
-            for
-            className="bg-gray-100 hover:bg-green-100 active px-5 active:bg-green-100 text-center rounded-sm border border-gray-600 hover:border-green-700 "
-          >
-            <h3 className="font-semibold my-4 ">Regisreation Fee</h3>
-            <div className="p-3 bg-gray-600 mb-5 hover:bg-green-600 cursor-pointer">
-              <Link href="#" className="text-white font-semibold">
-                $100.00
-              </Link>
-            </div>
+        <div className=" grid grid-cols-2 md:grid-cols-4 gap-5 mt-5 mb-5  ">
+          <div class="tabs">
+            <input type="radio" name="tab" id="tab1" role="tab" checked />
+            <label for="tab1" id="tab1-label">
+              <h3 className="font-semibold my-4 text-center">
+                Regisreation Fee
+              </h3>
+              <section aria-labelledby="tab1-label">
+                <div className="p-2 text-center bg-green-400   text-white font-semibold mb-5 cursor-pointer">
+                  $100.00
+                </div>
+              </section>
+            </label>
           </div>
-          <div className="bg-gray-100 hover:bg-green-100 px-5 active:bg-green-100 text-center rounded-sm border border-gray-600 hover:border-green-700 ">
-            <h3 className="font-semibold my-4">Quarterly</h3>
-            <div className="p-3 bg-gray-600 mb-5 hover:bg-green-600 cursor-pointer">
-              <Link href="#" className="text-white font-semibold">
-                $50.00
-              </Link>
-            </div>
+          <div class="tabs">
+            <input type="radio" name="tab" id="tab2" role="tab" checked />
+            <label for="tab2" id="tab2-label">
+              <h3 className="font-semibold my-4 text-center">Quarterly</h3>
+              <section aria-labelledby="tab2-label">
+                <div className="p-2 text-center bg-green-400  text-white font-semibold  mb-5 cursor-pointer">
+                  $50 to $75
+                </div>
+              </section>
+            </label>
           </div>
-          <div className="bg-gray-100 hover:bg-green-100 px-5 active:bg-green-100 text-center rounded-sm border border-gray-600 hover:border-green-700 ">
-            <h3 className="font-semibold my-4">6 Month</h3>
-            <div className="p-3 bg-gray-600 mb-5 hover:bg-green-600 cursor-pointer">
-              <Link href="#" className="text-white font-semibold">
-                $75.00
-              </Link>
-            </div>
+          <div class="tabs">
+            <input type="radio" name="tab" id="tab3" role="tab" checked />
+            <label for="tab3" id="tab3-label">
+              <h3 className="font-semibold my-4 text-center">6 Month</h3>
+              <section aria-labelledby="tab3-label">
+                <div className="p-2 text-center bg-green-400  text-white font-semibold  mb-5 cursor-pointer">
+                  $75 to $150
+                </div>
+              </section>
+            </label>
           </div>
-          <div className="bg-gray-100 hover:bg-green-100 px-5 active:bg-green-100 text-center rounded-sm border border-gray-600 hover:border-green-700 ">
-            <h3 className="font-semibold my-4">Annual Membership</h3>
-            <div className="p-3 bg-gray-600 mb-5 hover:bg-green-600 cursor-pointer">
-              <Link href="#" className="text-white font-semibold">
-                $100.00
-              </Link>
-            </div>
+          <div class="tabs">
+            <input type="radio" name="tab" id="tab4" role="tab" checked />
+            <label for="tab4" id="tab4-label">
+              <h3 className="font-semibold my-4 text-center">
+                Annual Membership
+              </h3>
+              <section aria-labelledby="tab4-label">
+                <div className="p-2 text-center bg-green-400  text-sm md:text-md text-white font-semibold  mb-5 cursor-pointer">
+                  $100 to $300
+                </div>
+              </section>
+            </label>
           </div>
         </div>
 
@@ -83,7 +98,7 @@ const SignUp = () => {
                         type="text"
                         name="name"
                         id="name"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 text-center.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                         placeholder="Full Name"
                         required=""
                         value={user.name}
@@ -101,7 +116,7 @@ const SignUp = () => {
                         type="email"
                         name="email"
                         id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 text-center.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                         placeholder="name@company.com"
                         required=""
                         value={user.email}
@@ -119,48 +134,67 @@ const SignUp = () => {
                         type="password"
                         name="password"
                         id="password"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 text-center.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required=""
                         value={user.password}
                         onChange={handleInput}
                       />
                     </div>
-                    {/* <div class="flex items-center justify-between">
-                    <div class="flex items-start">
-                      <div class="flex items-center h-5">
-                        <input
-                          id="remember"
-                          aria-describedby="remember"
-                          type="checkbox"
-                          class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                          required=""
-                        />
-                      </div>
-                      <div class="ml-3 text-sm">
-                        <label
-                          for="remember"
-                          class="text-gray-500 dark:text-gray-300"
-                        >
-                          Remember me
-                        </label>
+                    <div>
+                      <hr />
+                      <h1 className="flex items-center my-3 text-center justify-center font-semibold text-xl">
+                        <span class="material-symbols-outlined mr-3">
+                          task_alt
+                        </span>
+                        Paypal
+                      </h1>
+                      <hr />
+                    </div>
+                    <div>
+                      <h1 className="my-3 text-center  font-semibold text-xl">
+                        How you want to pay?
+                      </h1>
+                      <div class="flex justify-center">
+                        <div class="flex items-center mr-4">
+                          <input
+                            id="inline-radio"
+                            type="radio"
+                            value=""
+                            name="inline-radio-group"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 cursor-pointer dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                          />
+                          <label
+                            for="inline-radio"
+                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                          >
+                            Auto Debit Payment
+                          </label>
+                        </div>
+                        <div class="flex items-center mr-4">
+                          <input
+                            id="inline-2-radio"
+                            type="radio"
+                            value=""
+                            name="inline-radio-group"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 cursor-pointer dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                          />
+                          <label
+                            for="inline-2-radio"
+                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                          >
+                            Manual Payment
+                          </label>
+                        </div>
                       </div>
                     </div>
-                  </div> */}
                     <button
-                      type="submit"
+                      onClick={() =>
+                        router.push("https://www.paypal.com/in/signin")
+                      }
                       class="w-full text-white bg-green-600  hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-bold  rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                     >
                       Sign up
                     </button>
-                    <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                      have a Already Account
-                      <Link
-                        href="/Login"
-                        class="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                      >
-                        Login
-                      </Link>
-                    </p>
                   </form>
                 </div>
               </div>
