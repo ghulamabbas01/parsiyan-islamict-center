@@ -47,7 +47,7 @@ const SignUp = () => {
               <h3 className="font-semibold my-4 text-center">Quarterly</h3>
               <section aria-labelledby="tab2-label">
                 <div className="p-2 text-center bg-green-400  text-white font-semibold  mb-5 cursor-pointer">
-                  $50 to $75
+                  $75
                 </div>
               </section>
             </label>
@@ -58,7 +58,7 @@ const SignUp = () => {
               <h3 className="font-semibold my-4 text-center">6 Month</h3>
               <section aria-labelledby="tab3-label">
                 <div className="p-2 text-center bg-green-400  text-white font-semibold  mb-5 cursor-pointer">
-                  $75 to $150
+                  $150
                 </div>
               </section>
             </label>
@@ -71,7 +71,7 @@ const SignUp = () => {
               </h3>
               <section aria-labelledby="tab4-label">
                 <div className="p-2 text-center bg-green-400  text-sm md:text-md text-white font-semibold  mb-5 cursor-pointer">
-                  $100 to $300
+                  $300
                 </div>
               </section>
             </label>
@@ -150,11 +150,11 @@ const SignUp = () => {
                       </h1>
                       <hr />
                     </div>
-                    <div>
+                    <div className="mb-3">
                       <h1 className="my-3 text-center  font-semibold text-xl">
                         How you want to pay?
                       </h1>
-                      <div class="flex justify-center">
+                      <div class="flex justify-center mb-5">
                         <div class="flex items-center mr-4">
                           <input
                             id="inline-radio"
@@ -170,7 +170,7 @@ const SignUp = () => {
                             Auto Debit Payment
                           </label>
                         </div>
-                        <div class="flex items-center mr-4">
+                        <div class="flex items-center mr-4 ">
                           <input
                             id="inline-2-radio"
                             type="radio"
@@ -186,15 +186,14 @@ const SignUp = () => {
                           </label>
                         </div>
                       </div>
+
+                      <Link
+                        href="https://www.paypal.com/in/signin/"
+                        class=" text-white bg-green-600 text-lg px-40 mx-auto py-2.5 text-center "
+                      >
+                        Sign Up
+                      </Link>
                     </div>
-                    <button
-                      onClick={() =>
-                        router.push("https://www.paypal.com/in/signin")
-                      }
-                      class="w-full text-white bg-green-600  hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-bold  rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                    >
-                      Sign up
-                    </button>
                   </form>
                 </div>
               </div>

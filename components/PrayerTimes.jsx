@@ -34,7 +34,7 @@ const PrayerTimes = () => {
               <div className="relative w-full">
                 <Image src="/fager.jpg" alt="hero-img" layout="fill" />
                 <div className="relative py-6">
-                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                  <h3 className=" mb-3 font-bold text-1xl text-yellow-400 ">
                     FAJAR
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
@@ -50,7 +50,7 @@ const PrayerTimes = () => {
               <div className="relative w-full">
                 <Image src="/afternoon.jpg" alt="afternoon" layout="fill" />
                 <div className="relative py-6">
-                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                  <h3 className=" mb-3 font-bold text-1xl text-yellow-400 ">
                     ZOHAR
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
@@ -66,7 +66,7 @@ const PrayerTimes = () => {
               <div className="relative w-full">
                 <Image src="/asher.jpg" alt="asher" layout="fill" />
                 <div className="relative py-6">
-                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                  <h3 className=" mb-3 font-bold text-1xl text-yellow-400 ">
                     ASHAR
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
@@ -82,7 +82,7 @@ const PrayerTimes = () => {
               <div className="relative w-full">
                 <Image src="/magrab.jpg" alt="magrab" layout="fill" />
                 <div className="relative py-6">
-                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                  <h3 className=" mb-3 font-bold text-1xl text-yellow-400 ">
                     MAGRIB
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
@@ -98,7 +98,7 @@ const PrayerTimes = () => {
               <div className="relative w-full">
                 <Image src="/night.jpg" alt="night" layout="fill" />
                 <div className="relative py-6">
-                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                  <h3 className=" mb-3 font-bold text-1xl text-yellow-400 ">
                     ISHA
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
@@ -114,7 +114,7 @@ const PrayerTimes = () => {
               <div className="relative w-full">
                 <Image src="/juma.jpg" alt="juma" layout="fill" />
                 <div className="relative py-6">
-                  <h3 className=" mb-3 font-bold text-2xl text-yellow-400 ">
+                  <h3 className=" mb-3 font-bold text-1xl text-yellow-400 ">
                     JUMMA MUBARAKE
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
