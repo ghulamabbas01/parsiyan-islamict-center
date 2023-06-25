@@ -75,7 +75,7 @@ const Footer = () => {
                   <Link
                     target="blank"
                     href="https://goo.gl/maps/63gX4Bcoxg542rCk8"
-                    className="ml-3 text-gray-400 hover:text-white"
+                    className="ml-5 text-gray-400 hover:text-white"
                   >
                     2894 Eastren Ave, Sacramento, CA 95821
                   </Link>

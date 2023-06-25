@@ -12,6 +12,34 @@ const Donate = () => {
         <div className=" text-center  font-bold text-5xl my-10 md:w-[500px] mx-auto">
           Thank You For Your Desire To Give!
         </div>
+        <div className="text-center my-10">
+          <form
+            action="https://www.paypal.com/donate"
+            method="post"
+            target="_top"
+          >
+            <input
+              type="hidden"
+              name="hosted_button_id"
+              value="MB6526LEPSLM2"
+            />
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+              border="0"
+              name="submit"
+              title="PayPal - The safer, easier way to pay online!"
+              alt="Donate with PayPal button"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
           <div className=" bg-green-100 rounded-md border border-green-600 h-[500px] overflow-hidden ">
             <div className="relative w-full h-[500px]">

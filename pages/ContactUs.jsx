@@ -100,7 +100,7 @@ const ContactUs = () => {
         </div>
         <div className="">
           {/* from section  */}
-          <Stack className="form-section bg-green-100 border border-green-600 rounded-lg">
+          <Stack className="form-section bg-green-100 px-3 border border-green-600 rounded-lg">
             <Box className="form-feed md:px-48">
               {/* grid form feed 1  */}
               <FormikProvider value={formik}>
