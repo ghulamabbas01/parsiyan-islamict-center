@@ -128,12 +128,12 @@ const PrayerTimes = () => {
               </div>
             </div>
           </div>
-          <button
+          {/* <button
             className="bg-green-600 px-4 py-2  my-3 text-white font-bold mx-auto"
             onClick={() => router.push("/FirstMonth")}
           >
             View Full Month Pryaar Time
-          </button>
+          </button> */}
         </div>
       </div>
       {/* <div className="">
