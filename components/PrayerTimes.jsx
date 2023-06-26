@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import Image from "next/image";
+import Link from "next/link";
 // import { useRouter } from "next/router";
 const PrayerTimes = () => {
   // const router = useRouter();
@@ -30,7 +31,7 @@ const PrayerTimes = () => {
           </div>
         </div>
         <div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-3 items-center justify-center ">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-3 items-center justify-center mb-10">
             <div class="border overflow-hidden text-center rounded-md shadow-sm">
               <div className="bg-green-600 p-2 text-white font-bold ">
                 Dawn Prayer
@@ -115,7 +116,7 @@ const PrayerTimes = () => {
               <div className="bg-green-600 p-2 text-white font-bold ">
                 Sunrise Time
               </div>
-              <div className="relative w-full">
+              <div className="relative w-full ">
                 <Image src="/juma.jpg" alt="juma" layout="fill" />
                 <div className="relative py-6">
                   <h3 className=" mb-3 font-bold text-1xl text-yellow-400 ">
@@ -128,12 +129,12 @@ const PrayerTimes = () => {
               </div>
             </div>
           </div>
-          {/* <button
-            className="bg-green-600 px-4 py-2  my-3 text-white font-bold mx-auto"
-            onClick={() => router.push("/FirstMonth")}
+          <Link
+            href="/january"
+            className="bg-green-600 px-4 py-2 text-white font-bold mx-auto"
           >
             View Full Month Pryaar Time
-          </button> */}
+          </Link>
         </div>
       </div>
       {/* <div className="">
