@@ -11,7 +11,7 @@ const PrayerTimes = () => {
               <span className="font-semibold text-md text-green-600">
                 Parsiyan Islamic Center
               </span>
-              <h2 className="text-6xl font-bold ">Prayer Time </h2>
+              <h2 className="text-4xl font-bold ">Prayer Time </h2>
             </div>
             <div class="arabic-time mt-3">
               <span className="text-green-600 underline text-lg ">
@@ -21,7 +21,9 @@ const PrayerTimes = () => {
             </div>
             <p className="font-medium font-xl mt-2">
               “O you who have belived, seek help through patience
-              <br /> and prayer. inded, allah is with the patient.” (2.153)
+              <br /> and prayer. inded, allah is with the patient.” (2.153){" "}
+              <br />
+              <b> Sacramento, California</b>
             </p>
           </div>
         </div>
@@ -54,7 +56,7 @@ const PrayerTimes = () => {
                     ZOHAR
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
-                    1:30 AM
+                    1:30 PM
                   </div>
                 </div>
               </div>
@@ -70,7 +72,7 @@ const PrayerTimes = () => {
                     ASHAR
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
-                    5:30 AM
+                    7:30 pm
                   </div>
                 </div>
               </div>
@@ -86,7 +88,7 @@ const PrayerTimes = () => {
                     MAGRIB
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
-                    7:20 AM
+                    8:35 PM
                   </div>
                 </div>
               </div>
@@ -102,7 +104,7 @@ const PrayerTimes = () => {
                     ISHA
                   </h3>
                   <div className="bg-green-600 p-2  w-[80px] mx-auto font-semibold text-white rounded-sm ">
-                    9:20 AM
+                    10:15 PM
                   </div>
                 </div>
               </div>

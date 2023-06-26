@@ -20,7 +20,10 @@ const Footer = () => {
             </Link>
 
             <div className="social-icon flex gap-6 my-4 items-center">
-              <Link href="/">
+              <Link
+                href="https://www.facebook.com/profile.php?id=100092316501951&mibextid=LQQJ4d"
+                target="_blank"
+              >
                 <FaFacebook className="text-[28px] hover:text-gray-600 transition-all" />
               </Link>
               <Link href="/">
