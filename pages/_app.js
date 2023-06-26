@@ -13,6 +13,10 @@ export default function App({ Component, pageProps }) {
           content="Parsiyan Cultural Association is a non-profit organization that strives to preserve and promote the culture and rich traditions of our shared civilizational and cultural heritage. This association works with a steadfast determination to become a trusted platform for cultural and social exchange and participation."
         />
         <meta property="og:image" content="https://i.ibb.co/fNdWGsB/logo.jpg" />
+        <meta
+          name="keywords"
+          content="Parsiyan Cultural Assocation,Parsiyan islamic center,ParsiyanCulturalAssocation,islam,true islam,parsiyan cultural,true islam,true muslim,a true muslim,true islam org,true meaning of islam,true regarding the message of islam,the true islam,true quran,the true face of islam,real meaning of islam"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         {/* google font start  */}
