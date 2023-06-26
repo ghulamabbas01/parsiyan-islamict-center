@@ -78,7 +78,7 @@ const SignUp = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 bg-green-100 rounded-md border border-green-600  mb-10 justify-center items-center">
+        <div className="grid md:grid-cols-2 grid-cols-1 bg-green-100 rounded-md border border-green-600  mb-10 justify-center items-center overflow-hidden">
           <div>
             <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto">
               <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -189,7 +189,7 @@ const SignUp = () => {
 
                       <Link
                         href="https://www.paypal.com/in/signin/"
-                        class=" text-white bg-green-600 text-lg px-[130px] w-full  mx-auto py-2.5 text-center "
+                        class=" text-white bg-green-600 text-lg flex justify-center items-center w-full  mx-auto py-2.5 text-center "
                       >
                         Sign Up
                       </Link>

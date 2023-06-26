@@ -1,9 +1,9 @@
 import React from "react";
 import Container from "./Container";
 import Image from "next/image";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 const PrayerTimes = () => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-10 md:pt-[100px] ">
