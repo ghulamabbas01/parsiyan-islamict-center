@@ -122,7 +122,7 @@ const ContactUs = () => {
               </div>
 
               <input
-                onClick={() => router.push("/submit")}
+                onClick={() => router.push("/Submit")}
                 type="submit"
                 value="Send"
                 class="py-3 px-14 text-sm font-medium text-center text-white rounded-lg bg-green-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
