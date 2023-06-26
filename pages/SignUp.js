@@ -86,7 +86,7 @@ const SignUp = () => {
                   <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                     Sign in to your account
                   </h1>
-                  <form class="space-y-4 md:space-y-6" action="#">
+                  <form class="space-y-4 md:space-y-6 mx-auto" action="#">
                     <div>
                       <label
                         for="email"
@@ -189,7 +189,7 @@ const SignUp = () => {
 
                       <Link
                         href="https://www.paypal.com/in/signin/"
-                        class=" text-white bg-green-600 text-lg px-40 mx-auto py-2.5 text-center "
+                        class=" text-white bg-green-600 text-lg px-[130px] w-full  mx-auto py-2.5 text-center "
                       >
                         Sign Up
                       </Link>
