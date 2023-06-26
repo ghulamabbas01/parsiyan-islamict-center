@@ -2,19 +2,17 @@ import Container from "@/components/Container";
 import React from "react";
 import { useRouter } from "next/router";
 
-const FirstMonth = () => {
+const sixMonth = () => {
   const router = useRouter();
   return (
     <div className="pt-[120px] mb-10 ">
       <Container>
         <div className="flex justify-between my-5 items-center">
-          <div className="font-bold text-3xl">
-            January, 2023 | Jumada Al-Thani
-          </div>
+          <div className="font-bold text-3xl">June, 2023 | Dhul-Qadah</div>
           <div className="font-bold text-3xl">
             <button
               className="bg-green-600 p-2 text-white rounded-md "
-              onClick={() => router.push("/towMonth")}
+              onClick={() => router.push("/sevenMonth")}
             >
               Next Month
             </button>
@@ -496,4 +494,4 @@ const FirstMonth = () => {
   );
 };
 
-export default FirstMonth;
+export default sixMonth;

@@ -1,7 +1,9 @@
 import React from "react";
 import Container from "./Container";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const PrayerTimes = () => {
+  const router = useRouter();
   return (
     <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-10 md:pt-[100px] ">
@@ -126,6 +128,12 @@ const PrayerTimes = () => {
               </div>
             </div>
           </div>
+          <button
+            className="bg-green-600 px-4 py-2  my-3 text-white font-bold mx-auto"
+            onClick={() => router.push("/FirstMonth")}
+          >
+            View Full Month Pryaar Time
+          </button>
         </div>
       </div>
       {/* <div className="">

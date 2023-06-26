@@ -8,7 +8,11 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Parsiyan Cultural Assocation</title>
-        <meta name="description" content="Parsiyan Cultural Assocation" />
+        <meta
+          name="description"
+          content="Parsiyan Cultural Association is a non-profit organization that strives to preserve and promote the culture and rich traditions of our shared civilizational and cultural heritage. This association works with a steadfast determination to become a trusted platform for cultural and social exchange and participation."
+        />
+        <meta property="og:image" content="https://i.ibb.co/fNdWGsB/logo.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         {/* google font start  */}
