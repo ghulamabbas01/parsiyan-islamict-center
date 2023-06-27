@@ -1,25 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Container from "@/components/Container";
 import Link from "next/link";
 
 const ContactUs = () => {
-  function sendEmail(e) {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_1ce3oq4",
-        "template_4ouulo6",
-        e.target,
-        "L7LjjRX4cJF8Hyx4I"
-      )
-      .then((res) => {
-        console.log("SUCCESS!", res);
-      })
-      .catch((res) => {
-        alert("Something went wrong");
-      });
-  }
   return (
     <div className="pt-[120px] pb-10 ">
       <div className="bg-green-600 w-full p-10 border ">
@@ -47,8 +31,7 @@ const ContactUs = () => {
           <div class="py-8 my-14 lg:py-16 px-4 bg-green-100 border border-green-500 rounded-lg">
             <form
               class="space-y-8"
-              noValidate
-              onSubmit={sendEmail}
+              action="https://formspree.io/f/xnqkavnk"
               method="POST"
             >
               <div>
@@ -118,13 +101,11 @@ const ContactUs = () => {
                   placeholder="Leave a comment..."
                 ></textarea>
               </div>
-              <Link href="/Submit">
-                <input
-                  type="submit"
-                  value="Send"
-                  class="py-3 px-14 text-sm font-medium text-center text-white rounded-lg bg-green-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                />
-              </Link>
+              <input
+                type="submit"
+                value="send"
+                class="py-3 px-14 text-sm font-medium text-center text-white rounded-lg bg-green-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              />
             </form>
           </div>
         </Container>
