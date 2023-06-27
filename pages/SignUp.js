@@ -4,16 +4,19 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Container from "@/components/Container";
 const SignUp = () => {
+  const router = useRouter();
   // State variables for form fields
   const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [password, setpassword] = useState("");
+  // const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
 
-  const router = useRouter();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email && name) {
+    // router.push("https://www.paypal.com/in/signin/");
+    if (email && password) {
       router.push("https://www.paypal.com/in/signin/");
+    } else {
+      alert("errer");
     }
   };
   return (
@@ -88,7 +91,7 @@ const SignUp = () => {
                     class="space-y-4 md:space-y-6 mx-auto"
                     onSubmit={handleSubmit}
                   >
-                    <div>
+                    {/* <div>
                       <label
                         for="email"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -103,8 +106,9 @@ const SignUp = () => {
                         placeholder="Full Name"
                         required=""
                         onChange={(e) => setName(e.target.value)}
+                        value={name}
                       />
-                    </div>
+                    </div> */}
                     <div>
                       <label
                         for="email"
@@ -120,6 +124,7 @@ const SignUp = () => {
                         placeholder="name@company.com"
                         required=""
                         onChange={(e) => setEmail(e.target.value)}
+                        value={email}
                       />
                     </div>
                     <div>
@@ -130,12 +135,13 @@ const SignUp = () => {
                         Password
                       </label>
                       <input
-                        onChange={(e) => setEmail(e.target.password)}
+                        onChange={(e) => setPassword(e.target.value)}
                         type="password"
                         name="password"
                         id="password"
                         class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 text-center.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required=""
+                        value={password}
                       />
                     </div>
                     <div>
@@ -189,7 +195,7 @@ const SignUp = () => {
                         type="submit"
                         class=" text-white bg-green-600 text-lg flex justify-center items-center w-full  mx-auto py-2.5 text-center "
                       >
-                        Sign Up
+                        Sign Up / Sign in
                       </button>
                     </div>
                   </form>
