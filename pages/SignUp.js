@@ -16,7 +16,7 @@ const SignUp = () => {
     if (email && password) {
       router.push("https://www.paypal.com/in/signin/");
     } else {
-      alert("errer");
+      alert("Fill The Form");
     }
   };
   return (
