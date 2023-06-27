@@ -1,11 +1,10 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import Container from "@/components/Container";
-import { useRouter } from "next/router";
+import Link from "next/link";
 
 const ContactUs = () => {
-  const router = useRouter();
-  const sendEmail = (e) => {
+  function sendEmail(e) {
     e.preventDefault();
     emailjs
       .sendForm(
@@ -20,8 +19,7 @@ const ContactUs = () => {
       .catch((res) => {
         alert("Something went wrong");
       });
-  };
-
+  }
   return (
     <div className="pt-[120px] pb-10 ">
       <div className="bg-green-600 w-full p-10 border ">
@@ -105,7 +103,7 @@ const ContactUs = () => {
                 />
               </div>
 
-              <div class="sm:col-span-2">
+              <div class="sm:col-span-2 pb-7">
                 <label
                   for="message"
                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
@@ -120,13 +118,13 @@ const ContactUs = () => {
                   placeholder="Leave a comment..."
                 ></textarea>
               </div>
-
-              <input
-                onClick={() => router.push("/Submit")}
-                type="submit"
-                value="Send"
-                class="py-3 px-14 text-sm font-medium text-center text-white rounded-lg bg-green-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-              />
+              <Link href="/Submit">
+                <input
+                  type="submit"
+                  value="Send"
+                  class="py-3 px-14 text-sm font-medium text-center text-white rounded-lg bg-green-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                />
+              </Link>
             </form>
           </div>
         </Container>
