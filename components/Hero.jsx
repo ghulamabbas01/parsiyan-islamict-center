@@ -29,7 +29,7 @@ const Hero = () => {
               href="/SignUp"
               className="flex item-center justify-center font-semibold"
             >
-              Buy Membership
+              To Become Member
               <span class="material-symbols-outlined">chevron_right</span>
             </Link>
           </div>
