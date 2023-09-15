@@ -3,204 +3,198 @@
 @tailwind utilities;
 
 :root {
-    font-family: "Urbanist", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(0, 0, 0, 1);
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
-.hero-image{
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.Services-1{
- background-image: url("/Services.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- position: relative;
- overflow: hidden;
- height: 250px;
+.Services-1 {
+  background-image: url("/Services.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+.Services-1::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  right: 0;
+  border-radius: 8px;
+  opacity: 0.6;
+}
+.Services-2 {
+  background-image: url("/Services-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+}
+.Services-2::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  right: 0;
+  border-radius: 8px;
+  opacity: 0.6;
+}
+.Services-3 {
+  background-image: url("/Services-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+.Services-3::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  right: 0;
+  border-radius: 8px;
+  opacity: 0.6;
+}
+.Services-4 {
+  background-image: url("/Services-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+.Services-4::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  right: 0;
+  border-radius: 8px;
+  opacity: 0.6;
+}
+.Services-5 {
+  background-image: url("/dunate-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+.Services-5::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  right: 0;
+  border-radius: 8px;
+  opacity: 0.6;
+}
 
-}
-.Services-1::before{
-    content:"";
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    height: 250px;
-    top: 0;
-    right: 0;
-    border-radius: 8px;
-    opacity: 0.6;
-}
-.Services-2{
-    background-image: url("/Services-2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-    width: 100%;
-   }
-   .Services-2::before{
-    content:"";
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    height: 250px;
-    top: 0;
-    right: 0;
-    border-radius: 8px;
-    opacity: 0.6;
-}
-.Services-3{
-    background-image: url("/Services-3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-   }
-   .Services-3::before{
-    content:"";
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    height: 250px;
-    top: 0;
-    right: 0;
-    border-radius: 8px;
-    opacity: 0.6;
- 
-}
-.Services-4{
-    background-image: url("/Services-4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-   }
-   .Services-4::before{
-    content:"";
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    height: 250px;
-    top: 0;
-    right: 0;
-    border-radius: 8px;
-    opacity: 0.6;
- 
-}
-.Services-5{
-    background-image: url("/dunate-1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-   }
-   .Services-5::before{
-    content:"";
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    height: 250px;
-    top: 0;
-    right: 0;
-    border-radius: 8px;
-    opacity: 0.6;
- 
+.main__nav {
+  display: flex;
 }
 
 /* For debug only */
 
-    
-    .tabs {
-      /* Step 1: Enable Flex on the container */
-      display: flex;
-      
-      /* Step 2: Enable flex-wrap to put content section below tab label */
-      flex-wrap: wrap;
-    }
-    .tabs > section {  
-      /* Step 3: Move content <section> to the end, after the tab labels */
-      order: 999;
-      
-      /* Step 4: Make sure the content <section> is 100% width */
-      width: 100%;
-      
-      /* Step 5: Hide all content <section> by default */
-      display: none;
-    }
-    .tabs > input {
-      /* display: none; Don’t use display:none. Bad for accessibility */
-      
-      /* Step 6: Hide the radio inputs */
-      opacity: 0;
-      
-      /* Step 7: Make sure the radio inputs don’t take up space in layout */
-      position: absolute;
-    }
-    /* Step 8: Select the label right next to the selected input */
-    .tabs > input[type=radio]:checked + label {
-      /* Step 9: Highlight the selected label */
-      background: yellow;
-     
+.tabs {
+  /* Step 1: Enable Flex on the container */
+  display: flex;
 
-    }
-    /* Step 10: Select the section right next to the label which is next to the selected input */
-    .tabs > input[type=radio]:checked + label + section {
-      /* Step 11: Unset the 'display:none' we did in step 5 */
-      display: unset;
-    }
-    
-    /* Done. Make sure to disable the debug code at the beginning of CSS. And now it is time to make the tabs look good */
-    
-    /* Make the tabs look good */
-    /* Final Step: Make the tabs pretty with padding and colors */
-    
-    .tabs > label {
-      padding: 12px;
-      background: #DCFCE7;
-      width: 200px;
-      height: 150px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      /* border: 1px solid #4ea44b; */
-      border-radius: 4px;
-    }
-    .tabs > label:hover {
-        
-        background: #53A4E9;
-        /* border-right: 1px solid #4ea44b; */
-      }
-    .tabs > label:last-of-type {
-      border-right: none;
-    }
-    .tabs > input[type=radio]:checked + label {
-      background: #53A4E9
+  /* Step 2: Enable flex-wrap to put content section below tab label */
+  flex-wrap: wrap;
+}
+.tabs > section {
+  /* Step 3: Move content <section> to the end, after the tab labels */
+  order: 999;
 
-      
-    } 
-    
+  /* Step 4: Make sure the content <section> is 100% width */
+  width: 100%;
 
-    td{
-      padding: 12px 18px;
-    }
+  /* Step 5: Hide all content <section> by default */
+  display: none;
+}
+.tabs > input {
+  /* display: none; Don’t use display:none. Bad for accessibility */
 
+  /* Step 6: Hide the radio inputs */
+  opacity: 0;
 
+  /* Step 7: Make sure the radio inputs don’t take up space in layout */
+  position: absolute;
+}
+/* Step 8: Select the label right next to the selected input */
+.tabs > input[type="radio"]:checked + label {
+  /* Step 9: Highlight the selected label */
+  background: yellow;
+}
+/* Step 10: Select the section right next to the label which is next to the selected input */
+.tabs > input[type="radio"]:checked + label + section {
+  /* Step 11: Unset the 'display:none' we did in step 5 */
+  display: unset;
+}
 
+/* Done. Make sure to disable the debug code at the beginning of CSS. And now it is time to make the tabs look good */
 
+/* Make the tabs look good */
+/* Final Step: Make the tabs pretty with padding and colors */
 
+.tabs > label {
+  padding: 12px;
+  background: #dcfce7;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid #4ea44b; */
+  border-radius: 4px;
+}
+.tabs > label:hover {
+  background: #53a4e9;
+  /* border-right: 1px solid #4ea44b; */
+}
+.tabs > label:last-of-type {
+  border-right: none;
+}
+.tabs > input[type="radio"]:checked + label {
+  background: #53a4e9;
+}
+
+td {
+  padding: 12px 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .main__nav {
+    display: none;
+  }
+}

@@ -1,13 +1,32 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
 // import i18n from "@/i18n";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
-  const [open, setOpen] = React.useState(false);
-  const [flyer, setFlyer] = React.useState(false);
-  const [flyerTwo, setFlyerTwo] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [flyer, setFlyer] = useState(false);
+  const [flyerTwo, setFlyerTwo] = useState(false);
+  const router = useRouter();
+  const [activeLink, setActiveLink] = useState("");
+
+  // Define your navigation links and their href values
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/About", label: "About" },
+    { href: "/Donate", label: "Donate" },
+    { href: "/Services", label: "Services" },
+    { href: "/ContactUs", label: "Contact Us" },
+    { href: "/SignUp", label: "SignUp" },
+  ];
+
+  useEffect(() => {
+    // Check the current route and update the activeLink state
+    const currentPath = router.pathname;
+    setActiveLink(currentPath);
+  }, [router.pathname]);
 
   return (
     <div>
@@ -35,8 +54,7 @@ const Navbar = () => {
                 <button
                   type="button"
                   className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                  onClick={() => setOpen(!open)}
-                >
+                  onClick={() => setOpen(!open)}>
                   <span className="sr-only">Open menu</span>
                   {/* Heroicon name: outline/menu */}
                   <svg
@@ -45,8 +63,7 @@ const Navbar = () => {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    aria-hidden="true"
-                  >
+                    aria-hidden="true">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -56,37 +73,19 @@ const Navbar = () => {
                   </svg>
                 </button>
               </div>
-              <nav className="hidden md:flex space-x-10">
-                <Link
-                  href="/"
-                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/About"
-                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
-                >
-                  About
-                </Link>
-                <Link
-                  href="/Donate"
-                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
-                >
-                  Donate
-                </Link>
-                <Link
-                  href="/Services"
-                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
-                >
-                  Services
-                </Link>
-                <Link
-                  href="/ContactUs"
-                  className="text-base  text-gray-500 font-semibold hover:text-green-600"
-                >
-                  Contact Us
-                </Link>
+              <nav className="space-x-10 main__nav">
+                {navLinks.map((navLink) => (
+                  <Link key={navLink.href} href={navLink.href}>
+                    <p
+                      className={`text-base font-semibold ${
+                        activeLink === navLink.href
+                          ? "text-green-600"
+                          : "text-gray-500"
+                      } hover:text-green-600`}>
+                      {navLink.label}
+                    </p>
+                  </Link>
+                ))}
               </nav>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 {/* <Link
@@ -97,8 +96,7 @@ const Navbar = () => {
                 </Link> */}
                 <Link
                   href="/SignUp"
-                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600  hover:bg-green-700  "
-                >
+                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600  hover:bg-green-700  ">
                   Sign up / Login
                 </Link>
               </div>
@@ -114,8 +112,7 @@ const Navbar = () => {
                       <button
                         type="button"
                         className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                        onClick={() => setOpen(!open)}
-                      >
+                        onClick={() => setOpen(!open)}>
                         <span className="sr-only">Close menu</span>
                         {/* Heroicon name: outline/x */}
                       </button>
@@ -125,8 +122,7 @@ const Navbar = () => {
                     <nav className="grid gap-y-8">
                       <Link
                         href="/"
-                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                      >
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                         {/* Heroicon name: outline/chart-bar */}
                         <span class="material-symbols-outlined">house</span>
                         <span className="ml-3 text-base font-medium text-gray-900">
@@ -135,8 +131,7 @@ const Navbar = () => {
                       </Link>
                       <Link
                         href="/About"
-                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                      >
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                         {/* Heroicon name: outline/cursor-click */}
                         <span class="material-symbols-outlined">groups_2</span>
                         <span className="ml-3 text-base font-medium text-gray-900">
@@ -145,8 +140,7 @@ const Navbar = () => {
                       </Link>
                       <Link
                         href="/Donate"
-                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                      >
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                         {/* Heroicon name: outline/shield-check */}
                         <span class="material-symbols-outlined">bloodtype</span>
                         <span className="ml-3 text-base font-medium text-gray-900">
@@ -155,8 +149,7 @@ const Navbar = () => {
                       </Link>
                       <Link
                         href="//Services"
-                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                      >
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                         {/* Heroicon name: outline/view-grid */}
                         <span class="material-symbols-outlined">
                           design_services
@@ -167,8 +160,7 @@ const Navbar = () => {
                       </Link>
                       <Link
                         href="/ContactUs"
-                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                      >
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                         {/* Heroicon name: outline/refresh */}
                         <span class="material-symbols-outlined">
                           contact_page
@@ -179,8 +171,7 @@ const Navbar = () => {
                       </Link>
                       <Link
                         href="/SignUp"
-                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                      >
+                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                         {/* Heroicon name: outline/refresh */}
                         <span class="material-symbols-outlined">
                           subscriptions
